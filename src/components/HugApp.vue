@@ -1,5 +1,8 @@
 <script setup>
 import { onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
 
 onMounted(() => {
   if (typeof window !== 'undefined') {
@@ -11,6 +14,8 @@ onMounted(() => {
 </script>
 
 <template>
+  <h1>HugApp</h1>
+  <p>Current path: {{ route.fullPath }}</p>
   <nav>
     <ul>
       <li><router-link to="/">Home</router-link></li>

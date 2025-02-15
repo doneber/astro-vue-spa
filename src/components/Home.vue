@@ -2,8 +2,8 @@
   <div>
 
     <div>
-      <h1>Home</h1>
-      <p>Bienvenido a la SPA en Astro con Vue.</p>
+      <h2>Home</h2>
+      <p class="bg-red-200">Bienvenido a la SPA en Astro con Vue.</p>
     </div>
   </div>
 </template>
