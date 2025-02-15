@@ -11,10 +11,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [vue({ appEntrypoint: '/src/pages/_app.ts' })],
-  redirects: {
-    "/hug/[...slug]":  {
-      status: 301,
-      destination: '/hug',
-    },
-  }
+  redirects: {}
 });
